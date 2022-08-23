@@ -12,7 +12,7 @@ const formData = {}
 
 
 refs.form.addEventListener ('submit', onFormSubmit)
-refs.textarea.addEventListener ('input', throttle (onTextarea, 1000))
+refs.textarea.addEventListener ('input', throttle (onTextarea, 500))
 
     refs.form.addEventListener ('input', e => {
         formData[e.target.name] = e.target.value

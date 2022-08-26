@@ -18,9 +18,10 @@ savedMessage ()
 function onFormSubmit (e) {
     e.preventDefault ()
 
-    e.currentTarget.reset()
-    localStorage.removeItem (STORAGE_KEY)
-    console.log(formData);
+    e.currentTarget.reset ()
+    localStorage.removeItem(STORAGE_KEY)
+    console.log(formData)
+    return formData = {}
 }
 
 function onTextarea (e) {
@@ -42,5 +43,3 @@ function savedMessage () {
             }
     }
 }
-
-console.log('test');
